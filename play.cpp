@@ -1,11 +1,19 @@
+/** \file Main File */
+
 #include "my_std.h"
 #include <cstring>
 
+/**
+ * \brief struct
+ */
 struct List
 {
 	int x = 0;
 };
 
+/**
+ * \brief struct2
+ */
 struct Lid
 {
 	vector<List*> v;
@@ -16,6 +24,9 @@ struct Lid
 	}
 };
 
+/**
+ * \brief Main function
+ */
 int main()
 {
 	Lid lid;
@@ -34,4 +45,6 @@ int main()
 
 	for (auto l : lid.v)
 		p(l->x);
+
+	std::cout << "HELLO!\n";
 }
